@@ -16,7 +16,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Section 1 - Data Type
 
-**Key Functions** - typeof() - as.numeric() - as.charater()
+**Key Functions**
+- typeof()
+- as.numeric()
+- as.charater()
 
 ### Numeric
 
@@ -63,7 +66,7 @@ typeof(l2)
 
 ### Transforming Numerics and Characters
 
-```{r}
+``` {r}
 # Transforming numeric into characters
 num <- 10
 numToChar <- as.character(num)
@@ -79,40 +82,32 @@ paste("char Type: ", typeof(char), " | charToNum: ", typeof(charToNum))
 
 Complete the following tasks:
 
-```{r}
+``` {r}
 # Check the data type of the following variables
 a <- as.integer(500)
 b <- as.double(500)
 c <- as.character(500)
 
 # Enter your code here!
-typeof(a)
-typeof(b)
-typeof(c)
-
 is.double(a)
 
 
 # Check the data type of the new variable 'd'
 d <- a / b
 
-typeof(d)
-
 # Enter your code here!
 is.character(d)
 
-is.double(d)
 
 ```
 
-------------------------------------------------------------------------
+***
 
 ## Section 2 - Data Structure
-
--   is.vector()
--   is.matrix
--   cbind()
--   as.data.frame()
+- is.vector()
+- is.matrix
+- cbind()
+- as.data.frame()
 
 ### Vector
 
@@ -151,18 +146,16 @@ is.matrix(m2)
 
 ### Challenge:
 
-1.  Create a vector of the 26 alphabet lower case letters in sequence.
-2.  Create a 2 by 13 matrix for the 26 English upper case letter in sequence.
+1. Create a vector of the 26 alphabet lower case letters in sequence. 
+2. Create a 2 by 13 matrix for the 26 English upper case letter in sequence.
 
 Hint: Check out the "letters" and "LETTERS" key words in R.
 
 ```{r}
 # Enter your code here.
-alphabet <- letters
 
-alphabet
 
-is.vector(alphabet)
+
 ```
 
 ### DataFrame
@@ -182,15 +175,19 @@ df2 <- as.data.frame(cbind(vNumeric, vCharacter, vLogical))
 df2  # Makes a data frame with three different data types
 ```
 
-------------------------------------------------------------------------
+***
 
 ## Section 3 - Setup Working Directory and Installing Packages
 
-**Key Functions:** - getwd() - setwd() - install.packages() - library()
+**Key Functions:**
+- getwd()
+- setwd()
+- install.packages()
+- library()
 
 ### Setting up your working directory
 
-```{r}
+``` {r}
 # Check your current working directory
 # wd1 <- getwd()
 # paste("Current Working Directory: ", wd1)
@@ -235,7 +232,7 @@ df2  # Makes a data frame with three different data types
 # sessionInfo()
 ```
 
-------------------------------------------------------------------------
+***
 
 ## Section 4 - Problem Solving
 
@@ -251,31 +248,23 @@ Part d: Divide y by x and assign it to variable z
 
 part e: Print a statement to report your answer in Part d.
 
-Once you finished and knit the RMarkdown file into html file, you should be able to see the message "Congratulation!! You completed the first exercise in this section!!" in the html document.
+Once you finished and knit the RMarkdown file into html file, you should be able to see the message "Congratulation!!  You completed the first exercise in this section!!" in the html document.
 
 ```{r}
 # Write your code here!
 # Part a
-x <- 4
+
 
 # Part b
-y <- 12
+
 
 # Part c
-print(x,y)
-x
-y
+
 
 # Part d
-x = 4
-y = 12
-
-y / x
-z <- y / x
-
-z
-
-z = 3
+x = 2
+y = 3
+z = 10
 # Part e
 print(paste("y divided by x is equal to ", z))
 
@@ -291,3 +280,4 @@ if (exists("x") == TRUE | exists("y") == TRUE | exists("z") == TRUE){
   print("You did not complete the last problem!")
 }
 ```
+

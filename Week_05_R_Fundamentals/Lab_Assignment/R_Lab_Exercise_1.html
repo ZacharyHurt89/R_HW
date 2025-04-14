@@ -431,14 +431,24 @@ b &lt;- as.double(500)
 c &lt;- as.character(500)
 
 # Enter your code here!
-is.double(a)</code></pre>
+typeof(a)</code></pre>
+<pre><code>## [1] &quot;integer&quot;</code></pre>
+<pre class="r"><code>typeof(b)</code></pre>
+<pre><code>## [1] &quot;double&quot;</code></pre>
+<pre class="r"><code>typeof(c)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code>is.double(a)</code></pre>
 <pre><code>## [1] FALSE</code></pre>
 <pre class="r"><code># Check the data type of the new variable &#39;d&#39;
 d &lt;- a / b
 
-# Enter your code here!
+typeof(d)</code></pre>
+<pre><code>## [1] &quot;double&quot;</code></pre>
+<pre class="r"><code># Enter your code here!
 is.character(d)</code></pre>
 <pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code>is.double(d)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
 <hr />
 </div>
 </div>
@@ -501,7 +511,14 @@ sequence.</li>
 sequence.</li>
 </ol>
 <p>Hint: Check out the “letters” and “LETTERS” key words in R.</p>
-<pre class="r"><code># Enter your code here.</code></pre>
+<pre class="r"><code># Enter your code here.
+alphabet &lt;- letters
+
+alphabet</code></pre>
+<pre><code>##  [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot; &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot;
+## [20] &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;</code></pre>
+<pre class="r"><code>is.vector(alphabet)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
 </div>
 <div id="dataframe" class="section level3">
 <h3>DataFrame</h3>
@@ -560,21 +577,32 @@ should be able to see the message “Congratulation!! You completed the
 first exercise in this section!!” in the html document.</p>
 <pre class="r"><code># Write your code here!
 # Part a
-
+x &lt;- 4
 
 # Part b
-
+y &lt;- 12
 
 # Part c
+print(x,y)</code></pre>
+<pre><code>## [1] 4</code></pre>
+<pre class="r"><code>x</code></pre>
+<pre><code>## [1] 4</code></pre>
+<pre class="r"><code>y</code></pre>
+<pre><code>## [1] 12</code></pre>
+<pre class="r"><code># Part d
+x = 4
+y = 12
 
+y / x</code></pre>
+<pre><code>## [1] 3</code></pre>
+<pre class="r"><code>z &lt;- y / x
 
-# Part d
-x = 2
-y = 3
-z = 10
+z</code></pre>
+<pre><code>## [1] 3</code></pre>
+<pre class="r"><code>z = 3
 # Part e
 print(paste(&quot;y divided by x is equal to &quot;, z))</code></pre>
-<pre><code>## [1] &quot;y divided by x is equal to  10&quot;</code></pre>
+<pre><code>## [1] &quot;y divided by x is equal to  3&quot;</code></pre>
 <pre class="r"><code># Do not need to change the following code!
 if (exists(&quot;x&quot;) == TRUE | exists(&quot;y&quot;) == TRUE | exists(&quot;z&quot;) == TRUE){
   if (x == 4 &amp; y == 12 &amp; z == 3) {
@@ -585,7 +613,7 @@ if (exists(&quot;x&quot;) == TRUE | exists(&quot;y&quot;) == TRUE | exists(&quot
 } else {
   print(&quot;You did not complete the last problem!&quot;)
 }</code></pre>
-<pre><code>## [1] &quot;Sorry, you got it wrong!&quot;</code></pre>
+<pre><code>## [1] &quot;Congratulation!!  You completed the first activity in this class!!&quot;</code></pre>
 </div>
 </div>
 
